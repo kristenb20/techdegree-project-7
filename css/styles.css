@@ -11,7 +11,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 101%;
   grid-template-rows: auto;
   grid-template-areas:
       "header"
@@ -41,7 +41,7 @@ header span {
 
 header h1 {
   font-weight: 100;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .bell img {
@@ -132,7 +132,7 @@ header h3 {
 }
 
 nav .active {
-  border-bottom: 3px solid #85db81;
+  border-bottom: 4px solid #85db81;
 }
 
 .active img {
@@ -151,10 +151,11 @@ nav .active {
 }
 
 .headline {
-  width: 30%;
+  width: 35%;
   background-color: white;
   color: #8f8f8f;
   text-align: center;
+  font-size: 18px;
 }
 
 .main-header-search {
@@ -167,7 +168,7 @@ nav .active {
 }
 
 .search {
-  margin-right: 20px;
+  margin-right: 12px;
   border-radius: 6px;
   padding: 0.5em;
   border: 1px solid #c8c3c3;
@@ -186,7 +187,7 @@ nav .active {
   padding: 13px 15px 10px 15px;
   background-color: #7477bf;
   border-radius: 3px;
-  font-size: 14.5px;
+  font-size: 15px;
   color: white;
 }
 
@@ -227,9 +228,14 @@ nav .active {
   color: #8f8f8f;
 }
 
+.traffic-header h3 {
+  font-size: 15px;
+}
+
 .traffic-nav li {
   list-style: none;
-  padding: 5px 15px;
+  padding: 5px 4px;
+  font-size: 12px;
 }
 
 .weekly {
@@ -264,8 +270,10 @@ nav .active {
 .message h3,
 .settings h3 {
   font-weight: 900;
+  font-size: 15px;
   color: #8f8f8f;
 }
+
 #mobile-chart{
   width: 450px;
 }
@@ -306,7 +314,7 @@ nav .active {
 
 .social-text .number {
   color: #666;
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 100;
   line-height: 45px;
 }
@@ -475,6 +483,10 @@ Media Queries
     grid-column: 1 / span 2;
   }
 
+  header h1 {
+    font-size: 25px;
+  }
+
   .alert {
     margin: 20px 35px 0 25px;
   }
@@ -506,12 +518,14 @@ Media Queries
   }
 
   nav .active {
-    border-left: 3px solid #85db81;
+    border-left: 4px solid #85db81;
     border-bottom: none;
+    margin-left: -3px;
   }
 
   .headline {
     width: 20%;
+    font-size: 25px;
   }
 
   .main-header-search {
@@ -523,8 +537,24 @@ Media Queries
     margin-right: 35px;
   }
 
+  .traffic-header h3,
+  .daily h3,
+  .mobile h3,
+  .social h3,
+  .members h3,
+  .activity h3,
+  .message h3,
+  .settings h3  {
+    font-size: 20px;
+  }
+
   .traffic-nav {
     margin-right: 20px;
+  }
+
+  .traffic-nav li {
+    padding: 5px 15px;
+    font-size: 14.5px;
   }
 
   .mobile {
